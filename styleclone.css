@@ -28,5 +28,28 @@ body{
     background-color: lightcoral;
 }
 .grid-cont {
-    height: calc(100 vh - 3rem - 3rem - 3rem);
+    height: calc(100vh - 3rem - 3rem - 2rem - 3rem );
+}
+.top-left-dummy {
+    height: 2rem;
+    width: 2rem;
+    background-color: #747d8c;
+}
+.address-col-cont {
+    height: 10rem;
+    width: 2rem;
+    background-color: lightblue;
+}
+.address-row-cont {
+    height: 2rem;
+    background-color: lightpink;
+    position: absolute;
+    top: 0;
+    left: 2rem;
+}
+.cells-cont {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    background-color: lightgreen;
 }
