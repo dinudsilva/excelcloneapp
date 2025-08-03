@@ -1,4 +1,6 @@
 // storage of 2d matrix
+
+let collectedGraphComponent = [];
 let graphComponentMatrix = [];
 
 for (let i = 0; i < rows; i++){
@@ -31,11 +33,11 @@ function isGraphCyclic(graphComponentMatrix){
         for (let j = 0; j < cols; j++){
             if (visited[i][j] === false){
             let response = dfsCycleDetection(graphComponentMatrix, i, j, visited, dfsVisited);
-            if (response == true) return true;
+            if (response == true) return [i,j];
             }
         }
     }    
-    return false;
+    return null;
 }
     
 // start -> vis(True) dfsvis(True)
